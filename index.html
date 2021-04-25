@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Isotope - combination filters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <section>
+      <ul id="da-thumbs" class="da-thumbs">
+        <li>
+          <a href="#">
+
+            <!-- 圖片1 -->
+            <img src="https://www.ageinmedia.com/assets/images/work/zh/our%20cases-01.jpg" alt="" width="300px" height="180px">
+
+            <!-- 滑鼠移入內容 -->
+            <div class="hot-info">
+              <h2>開店123</h2>
+              <p>
+                網頁開發或平面設計
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- 圖片2 -->
+            <img src="https://www.ageinmedia.com/assets/images/work/zh/our%20cases-02.jpg" alt="" width="300px" height="180px">
+
+            <!-- 滑鼠移入內容 -->
+            <div class="hot-info">
+              <h2>網路行銷</h2>
+              <p>
+                網站做好了，就可以被搜尋到嗎?
+              </p>
+            </div>
+          </a>
+        </li>
+        <ul>
+
+    </section>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./hoverdir.js"></script>
+  <script src="./hoverdir.plugin.js"></script>
+
+
+  <script type="text/javascript">
+    $(function () {
+
+      $('#da-thumbs > li').each(function () {
+        $(this).hoverdir()
+      });
+      $('#da-thumbs > li').hoverdir({
+        hoverDelay: 50,
+        reverse: true
+
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
